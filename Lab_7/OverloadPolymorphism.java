@@ -1,0 +1,24 @@
+package Lab_7;
+
+public class OverloadPolymorphism {
+    void display(int value){
+        System.out.println(value);
+    }
+    void display(double value){
+        System.out.println(value);
+    }
+    void display(float value){
+        System.out.println(value);
+    }
+    void display(char value){
+        System.out.println(value);
+    }
+
+    public static void main(String[] args) {
+        OverloadPolymorphism o = new OverloadPolymorphism();
+        o.display(11);
+        o.display(11.5f);
+        o.display(11.3);
+        o.display('F');
+    }
+}
